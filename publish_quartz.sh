@@ -17,8 +17,6 @@ cp -R "$OBSIDIAN_PUBLIC"/. "$QUARTZ_CONTENT"
 # Change to Quartz directory
 cd "$QUARTZ_DIR" || exit
 
-git checkout main
-
 # Check if there are changes
 if [ -n "$(git status --porcelain)" ]; then
     echo "Changes detected. Committing and pushing..."

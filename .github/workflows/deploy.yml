@@ -11,13 +11,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Updated to latest version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4  # Updated to latest version
         with:
           node-version: 18
-      - run: npm install
-      - run: npx quartz build
-      - uses: actions/upload-pages-artifact@v1
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Quartz site
+        run: npx quartz build
+
+      - name: Upload site to GitHub Pages
+        uses: actions/upload-pages-artifact@v2  # Updated to latest version
         with:
-          path: public
-      - uses: actions/deploy-pages@v1
+          path: public  # Ensure this matches your Quartz output directory
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3  # Updated to latest version

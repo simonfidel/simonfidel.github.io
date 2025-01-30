@@ -28,7 +28,7 @@ jobs:
         run: npx quartz build
 
       - name: Upload site to GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: public  # Ensure this matches your Quartz output directory

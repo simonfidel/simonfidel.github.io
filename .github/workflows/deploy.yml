@@ -1,0 +1,12 @@
+name: Deploy Quartz
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and deploy
+        run: |
+          npm install
+          npx quartz build
+          npx quartz deploy

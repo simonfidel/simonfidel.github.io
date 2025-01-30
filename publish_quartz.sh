@@ -22,12 +22,12 @@ if [ -n "$(git status --porcelain)" ]; then
     echo "Changes detected. Committing and pushing..."
     git add .
     git commit -m "Auto-sync from Obsidian Public to Quartz"
-    git push origin v4  # Change 'v4' to your Quartz branch if different
+    git push origin main
 else
     echo "No changes detected. Skipping push."
 fi
 
 # Sync Quartz manually (optional)
-npx quartz sync
+/usr/local/bin/npx quartz sync
 
 echo "✅ Public folder copied & changes published!"

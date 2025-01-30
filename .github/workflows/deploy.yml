@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Updated to latest version
+        uses: actions/checkout@v4  # Latest version
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4  # Updated to latest version
+        uses: actions/setup-node@v4  # Latest version
         with:
           node-version: 18
 
@@ -26,9 +26,10 @@ jobs:
         run: npx quartz build
 
       - name: Upload site to GitHub Pages
-        uses: actions/upload-pages-artifact@v2  # Updated to latest version
+        uses: actions/upload-artifact@v4  # ✅ Updated from v3 to v4
         with:
+          name: github-pages
           path: public  # Ensure this matches your Quartz output directory
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v3  # Updated to latest version
+        uses: actions/deploy-pages@v4  # ✅ Updated to v4

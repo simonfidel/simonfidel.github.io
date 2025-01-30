@@ -27,6 +27,10 @@ else
     echo "No changes detected. Skipping push."
 fi
 
+# Fix: Ensure Node.js is available
+export PATH=/usr/local/bin:$PATH
+export PATH=$(npm bin -g):$PATH
+
 # Sync Quartz manually (optional)
 /usr/local/bin/npx quartz sync
 

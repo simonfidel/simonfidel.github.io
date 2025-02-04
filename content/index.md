@@ -3,6 +3,9 @@ title: Hello World
 description: 
 draft: false
 date: "{{date:YYYY-MM-DD}}T{{time:HH:mm:ss}}+00:00"
+tags: 
+author:
+  - "{{author}}"
 ---
 
 # MD Test
@@ -20,3 +23,9 @@ with description
 with draft
 
 with date
+
+with tags
+
+with author
+
+

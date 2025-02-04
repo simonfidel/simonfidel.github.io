@@ -1,7 +1,6 @@
 ---
-
-title: "Hello World"
-
+title: Hello World
+description:
 ---
 
 # MD Test
@@ -14,3 +13,4 @@ print("does this still work?")
 ```
 
 $$ \frac{1}{2} $$
+with description

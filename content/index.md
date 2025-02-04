@@ -1,6 +1,7 @@
 ---
 title: Hello World
-description:
+description: 
+draft: false
 ---
 
 # MD Test
@@ -15,3 +16,4 @@ print("does this still work?")
 $$ \frac{1}{2} $$
 with description
 
+with draft

@@ -3,9 +3,10 @@ title: Hello World
 description: 
 draft: false
 date: "{{date:YYYY-MM-DD}}T{{time:HH:mm:ss}}+00:00"
-tags: 
+tags:
+  - philosophy
 author:
-  - "{{author}}"
+  - Alexandra Ossola
 ---
 
 # MD Test
@@ -28,4 +29,4 @@ with tags
 
 with author
 
-
+with tags and author filled

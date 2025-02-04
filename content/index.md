@@ -2,6 +2,7 @@
 title: Hello World
 description: 
 draft: false
+date: "{{date:YYYY-MM-DD}}T{{time:HH:mm:ss}}+00:00"
 ---
 
 # MD Test
@@ -17,3 +18,5 @@ $$ \frac{1}{2} $$
 with description
 
 with draft
+
+with date
